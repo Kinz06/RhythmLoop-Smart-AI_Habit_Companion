@@ -1,0 +1,20 @@
+# Node
+frontend/node_modules/
+
+# Python
+backend/venv/
+*.pyc
+
+# Builds
+frontend/dist/
+backend/model.pkl
+
+# Environment variables
+*.env
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

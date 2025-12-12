@@ -1,0 +1,23 @@
+/* frontend/src/index.css */
+body { font-family: Inter, system-ui, Arial; margin: 0; padding: 20px; background: #f3f6fb; color: #111; }
+.container { max-width: 980px; margin: 0 auto; }
+.card { background: white; padding: 18px 20px; border-radius: 10px; box-shadow: 0 6px 18px rgba(15,20,30,0.06); margin-bottom: 18px; }
+button { padding: 8px 12px; border: none; border-radius: 8px; cursor: pointer; background: #2b6ef6; color: white; }
+button[disabled] { opacity: 0.6; cursor: not-allowed; }
+input, textarea { padding: 10px 12px; border-radius: 8px; border: 1px solid #e2e8f0; width: 100%; box-sizing: border-box; }
+.header { display:flex; justify-content:space-between; align-items:center; margin-bottom:18px; }
+.header a { margin-left: 10px; color:#2b6ef6; text-decoration: none; }
+.habit-row { display:flex; gap:8px; align-items:center; justify-content:space-between; }
+.small { font-size: 0.88rem; color: #556; }
+h3 { margin: 0 0 10px 0; }
+
+/* spinner keyframe */
+@keyframes spin { from { transform: rotate(0deg);} to { transform: rotate(360deg);} }
+
+/* nicer buttons */
+button { background:#2b6ef6; color:#fff; border:none; padding:8px 12px; border-radius:8px; cursor:pointer; }
+button[disabled] { opacity:0.6; cursor:not-allowed; }
+
+/* card already defined, small tweaks */
+.card { transition: transform 0.12s ease, box-shadow 0.12s ease; }
+.card:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(10,20,40,0.08); }
